@@ -16,13 +16,13 @@ const CustomButton = () => {
 
 const signin = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <Text>signin</Text>
       <Link href="/signup" style={{color: 'blue'}}>
       <Text>Go to sign up</Text>
       </Link>
       <CustomButton />
-    </SafeAreaView>
+    </View>
   )
 }
 
@@ -30,15 +30,15 @@ export default signin
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor : 'rgba(240, 128, 128, 0.4)',
+    backgroundColor : 'rgb(254, 192, 192)',
     display: 'flex',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
 },
-button: {
+  button: {
     backgroundColor: 'blue',
     padding: 10,
     borderRadius: 5,
-},
+  },
 })

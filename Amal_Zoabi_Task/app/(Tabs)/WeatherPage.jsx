@@ -8,13 +8,13 @@ import { Button } from '@react-navigation/elements';
 const WeatherPage = () => {
     const navigation = useNavigation();
     return (
-        <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
             <Text>Weather</Text>
             <Text>Current weather:</Text>
             <Button style={styles.button} onPress={() => navigation.navigate('Home')}>
                 <Text style={{color:'white'}}>Go to Home Page</Text>
             </Button>
-        </SafeAreaView>
+        </View>
     )  
 }
 export default WeatherPage
@@ -22,7 +22,7 @@ export default WeatherPage
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor : 'rgba(240, 128, 128, 0.4)',
+        backgroundColor : 'rgb(254, 192, 192)',
         display: 'flex',
         flex: 1,
         alignItems: 'center',

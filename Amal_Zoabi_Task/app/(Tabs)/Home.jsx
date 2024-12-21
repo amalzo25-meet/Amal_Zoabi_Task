@@ -24,7 +24,7 @@ const MyAppHeaderText = ({children}) => {
 const Home = () => {
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <MyAppHeaderText>
         Hello!
       </MyAppHeaderText>
@@ -33,13 +33,13 @@ const Home = () => {
       <Button style={styles.button} onPress={() => navigation.navigate('WeatherPage')}>
         <Text style={{color:'white'}}>Go to WeatherPage</Text>
       </Button>
-    </SafeAreaView>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-      backgroundColor : 'rgba(240, 128, 128, 0.4)',
+      backgroundColor : 'rgb(254, 192, 192)',
       display: 'flex',
       flex: 1,
       alignItems: 'center',

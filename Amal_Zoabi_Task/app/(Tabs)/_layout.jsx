@@ -1,20 +1,13 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Slot , Stack} from 'expo-router';
-import { Tabs, Redirect } from 'expo-router';
+import { Tabs } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 
 const TabsLayout = () => {
   return (
-    // <View style={styles.container}>
-    // <Stack>
-    //     <Stack.Screen name="index"  options={{headerShown:false}}/>
-    //     <Stack.Screen name="WeatherPage" options={{headerShown:false}}/>
-    //     </Stack>
-    // </View>
-    <SafeAreaView>
-    <Text>Main Layout</Text>
+    <View style={styles.container}>
     <Tabs>
       <Tabs.Screen name="Home" 
        options = 
@@ -47,7 +40,7 @@ const TabsLayout = () => {
             justifyContent: 'center',
         }}} />
     </Tabs>
-    </SafeAreaView>
+    </View>
   )
 }
 
@@ -57,9 +50,8 @@ export default TabsLayout
 
 const styles = StyleSheet.create({
     container: {
+        headerShown: false,
         display: 'flex',
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
     }
 })

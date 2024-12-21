@@ -15,27 +15,26 @@ const CustomButton = () => {
 
 const index = () => {
   return (
-    <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
       <Text>index</Text>
       <CustomButton />
-    </SafeAreaView>
+      </View>
   )
 }
 
 export default index
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor : 'rgba(240, 128, 128, 0.4)',
-        display: 'flex',
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: 100
-    },
-    button: {
-      backgroundColor: 'blue',
-      padding: 10,
-      borderRadius: 5,
-    },
+  container: {
+    backgroundColor : 'rgb(254, 192, 192)',
+    display: 'flex',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+},
+  button: {
+    backgroundColor: 'blue',
+    padding: 10,
+    borderRadius: 5,
+  },
 })
