@@ -30,8 +30,8 @@ const Home = () => {
       </MyAppHeaderText>
       <MyAppText> Welcome to Amal's DEV TASK </MyAppText>
       <StatusBar style="auto" />
-      <Button style={styles.button} onPress={() => navigation.navigate('WeatherPage')}>
-        <Text style={{color:'white'}}>Go to WeatherPage</Text>
+      <Button style={styles.button} onPress={() => navigation.navigate('TaskPage')}>
+        <Text style={{color:'white'}}>Go to Task Manager</Text>
       </Button>
     </View>
   )

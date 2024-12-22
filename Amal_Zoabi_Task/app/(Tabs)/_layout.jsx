@@ -25,9 +25,10 @@ const TabsLayout = () => {
             justifyContent: 'center',
           }}} />
 
-      <Tabs.Screen name="WeatherPage"options = 
+      <Tabs.Screen name="TaskPage"
+      options = 
         {{
-          title: "Weather", 
+          title: "Tasks", 
           headerShown: false,
           tabBarIcon : ()=> null,
           tabBarLabelStyle: {

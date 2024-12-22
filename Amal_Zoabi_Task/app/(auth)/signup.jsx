@@ -78,7 +78,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     paddingVertical: 10,
     paddingLeft: 10,
-    paddingRight: 30
+    paddingRight: 30,
+    height: 48,
+    maxHeight: 48,
+    width: 300,
+    maxWidth: 300
     },
   iconContainer: {
     position: 'absolute',

@@ -76,14 +76,18 @@ const styles = StyleSheet.create({
     height: 40,
     margin: 12,
     borderWidth: 1,
+    height: 48,
+    maxHeight: 48,
+    width: 300,
+    maxWidth: 300,
     paddingVertical: 10,
     paddingLeft: 10,
     paddingRight: 30
     },
   iconContainer: {
-    position: 'absolute', // Position the icon inside the TextInput container
-    right: 18, // Place the icon 10px from the right edge
-    top: 35, // Vertically center the icon
+    position: 'absolute',
+    right: 18, 
+    top: 35, 
     transform: [{ translateY: -10 }],  
   },
 })
