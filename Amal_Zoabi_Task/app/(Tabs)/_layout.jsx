@@ -50,7 +50,6 @@ export default TabsLayout
 
 const styles = StyleSheet.create({
     container: {
-        headerShown: false,
         display: 'flex',
         flex: 1,
     }

@@ -21,6 +21,5 @@ const styles = StyleSheet.create({
     backgroundColor : 'rgb(254, 192, 192)',
     display: 'flex',
     flex: 1,
-    headerShown: false
 }
 })
