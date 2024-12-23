@@ -9,8 +9,7 @@ import hide from '../../assets/images/eyehide.png';
 const FormX = ({title, value, placeholder, handleChangeText, ...props}) => {
   const [showpassword, setshowpassword] = useState(false)
   return (
-    <View>
-      <Text>{title}</Text>
+    <View style={{position: 'relative'}}>
       <View>
         <TextInput style={styles.input} 
         value={value} title={title} onChangeText={handleChangeText}
@@ -50,7 +49,7 @@ const signup = () => {
         <FormX placeholder="Enter Your Username Here" 
         value={form.username} handleChangeText={(e)=> {setform({...form, username: e})}} />
         <Text style={styles.subheader}>Password:</Text>
-        <FormX placeholder="Enter Your Password Here"
+        <FormX title="Password:" placeholder="Enter Your Password Here"
         value={form.password} handleChangeText={(e)=> {setform({...form, password: e})}} />
       </View>
       <View style={styles.TextView}>
@@ -96,12 +95,13 @@ const styles = StyleSheet.create({
     paddingRight: 30,
     borderRadius: 5
     },
-  iconContainer: {
-    position: 'absolute',
-    right: 18, 
-    top: 40, 
-    transform: [{ translateY: -10 }],  
-  },
+    iconContainer: {
+      position: 'absolute',
+      right: 18, 
+      top: 30, 
+      transform: [{ translateY: -10 }],  
+      zIndex: 1,
+    },
   button: {
     backgroundColor: 'maroon',
     borderRadius: 10,
@@ -122,7 +122,8 @@ const styles = StyleSheet.create({
     color: 'black',
     fontWeight: 'bold', 
     fontSize: 20,
-    marginTop: 10
+    marginTop: 10,
+    marginBottom: 10
   },
   TextView: {
     alignItems: 'center',
