@@ -8,8 +8,8 @@ const MainLayout = () => {
     <View style={styles.container}>
       <Stack options={{headershown:false}}>
         <Stack.Screen name="index" options={{headerShown:false}} />
-        <Stack.Screen name="(auth)" options={{headershown:false}}/>
-        <Stack.Screen name="(Tabs)" options={{headershown:false}}/>
+        <Stack.Screen name="(auth)" options={{headerShown:false}}/>
+        <Stack.Screen name="(Tabs)" options={{headerShown:false}}/>
       </Stack>
     </View>
   )
@@ -19,7 +19,7 @@ export default MainLayout
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor : 'rgb(254, 192, 192)',
+    backgroundColor : 'lightyellow',
     display: 'flex',
     flex: 1,
 },

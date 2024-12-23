@@ -23,7 +23,8 @@ const TabsLayout = () => {
           },
           tabBarItemStyle: {
             justifyContent: 'center',
-          }}} />
+          },
+          }} />
 
       <Tabs.Screen name="TaskPage"
       options = 
@@ -50,8 +51,9 @@ export default TabsLayout
 
 
 const styles = StyleSheet.create({
-    container: {
-        display: 'flex',
-        flex: 1,
-    }
+  container: {
+    backgroundColor : 'lightyellow',
+    display: 'flex',
+    flex: 1,
+},
 })

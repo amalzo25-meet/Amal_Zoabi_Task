@@ -6,50 +6,56 @@ import { useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 
-
-const MyAppText = ({children}) => {
-  return (
-      <Text style={{fontSize: 20, color: 'blue'}}>{children}</Text>
-  );
-}
-
-const MyAppHeaderText = ({children}) => {
-  return (
-    <MyAppText>
-      <Text style={{fontSize: 50, color: 'red'}}>{children}</Text>
-    </MyAppText>
-  );
-};
-
 const Home = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <MyAppHeaderText>
-        Hello!
-      </MyAppHeaderText>
-      <MyAppText> Welcome to Amal's DEV TASK </MyAppText>
+      <Text style={styles.header}>This is The Home Page.</Text>
+      <View style={styles.TextView}>
+      <Text style={styles.subheader}>Do You Have a lot of Tasks To Do and No Way To Manage Them🤔?</Text>
+      <Text style={styles.subheader}>This is The BEST Solution You Will Ever Get!</Text>
       <StatusBar style="auto" />
       <Button style={styles.button} onPress={() => navigation.navigate('TaskPage')}>
-        <Text style={{color:'white'}}>Go to Task Manager</Text>
+        <Text style={{color: 'rgb(254, 192, 192)', fontSize: 17, fontWeight:'400'}}>Task Manager</Text>
       </Button>
+      </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-      backgroundColor : 'rgb(254, 192, 192)',
-      display: 'flex',
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center',
-  },
+    backgroundColor : 'lightyellow',
+    display: 'flex',
+    flex: 1,
+},
   button: {
-    backgroundColor: 'blue',
-    padding: 10,
-    borderRadius: 5,
+    backgroundColor: 'maroon',
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+    width: 200, 
+    height: 50,
+    },
+  header: {
+    color: 'rgb(81, 80, 80)',
+    fontWeight: 'bold', 
+    fontSize: 25,
+    marginBottom: 50,
+    marginTop: 100,
+    marginLeft: 20
   },
+  subheader: {
+    color: 'black',
+    fontWeight: 'bold', 
+    fontSize: 20,
+    margin: 20
+  },
+  TextView: {
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
 })
 
 export default Home

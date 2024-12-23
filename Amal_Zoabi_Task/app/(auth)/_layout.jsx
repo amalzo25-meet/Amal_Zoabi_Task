@@ -18,7 +18,7 @@ export default authlayout
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor : 'rgb(254, 192, 192)',
+    backgroundColor : 'lightyellow',
     display: 'flex',
     flex: 1,
 }
